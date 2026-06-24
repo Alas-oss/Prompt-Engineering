@@ -6,8 +6,6 @@ def load_results():
         return json.load(f)
 
 def compute_averages(results):
-    """Group scores by technique and compute the average for each dimension."""
-    # Store scores per technique
     scores_by_technique = defaultdict(lambda: {
         "accuracy": [],
         "conciseness": [],
@@ -18,7 +16,6 @@ def compute_averages(results):
         technique = entry["technique"]
         scores = entry["scores"]
 
-        # Only include entries that have been scored (not null)
         if scores["accuracy"] is not None:
             scores_by_technique[technique]["accuracy"].append(scores["accuracy"])
         if scores["conciseness"] is not None:
@@ -26,7 +23,6 @@ def compute_averages(results):
         if scores["consistency"] is not None:
             scores_by_technique[technique]["consistency"].append(scores["consistency"])
 
-    # Compute averages
     averages = {}
     for technique, dims in scores_by_technique.items():
         acc = dims["accuracy"]
@@ -45,12 +41,10 @@ def compute_averages(results):
     return averages
 
 def print_table(averages):
-    """Print a formatted comparison table to the terminal."""
     print("\n── Results Summary ──────────────────────────────────────────")
     print(f"{'Technique':<20} {'Accuracy':>10} {'Conciseness':>12} {'Consistency':>12} {'Overall':>10}")
     print("─" * 68)
 
-    # Sort by overall score descending
     sorted_techniques = sorted(
         averages.items(),
         key=lambda x: x[1]["overall"] or 0,
