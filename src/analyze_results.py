@@ -1,7 +1,3 @@
-# analyze_results.py
-# Reads results.json, computes average scores per technique,
-# and prints a summary table to the terminal.
-
 import json
 from collections import defaultdict
 

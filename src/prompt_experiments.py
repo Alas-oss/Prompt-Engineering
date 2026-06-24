@@ -57,7 +57,7 @@ FEW_SHOT_EXAMPLES = """
 
 
 def few_shot(article_text):
-    system = "You are a helpful assistant, who write concise, accurate, and informative summaries."
+    system = "You are a helpful assistant, who writes concise, accurate, and informative summaries."
     user = (
         f"{FEW_SHOT_EXAMPLES}\n\n"
         f"Summarize the following article in 3 sentences, following the same manner and style as the examples above.\n\n"
@@ -66,7 +66,7 @@ def few_shot(article_text):
 
 # D - Chain-of-Thought
 def chain_of_thought(article_text):
-    system = "You are a helpful assistant, who write concise, accurate, and informative summaries."
+    system = "You are a helpful assistant, who writes concise, accurate, and informative summaries."
     user = (
         f"Read the article and provide 3 key points from there:\n"
         f"Step 1: List the 3 main ideas.\n"
