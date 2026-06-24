@@ -68,4 +68,3 @@ if __name__ == "__main__":
     results = load_results()
     averages = compute_averages(results)
     print_table(averages)
-
