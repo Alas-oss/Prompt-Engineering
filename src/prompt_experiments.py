@@ -85,7 +85,7 @@ def json_output(article_text):
     raw = call_llm(system, user)
 
     try:
-        cleaned = raw.strip().removeprefix("'''json").removeprefix("'''").removesuffix("'''").strip()
+        cleaned = raw.strip().removeprefix("```json").removeprefix("```").removesuffix("```").strip()
         parsed = json.loads(cleaned)
         return {"raw" : raw, "parsed": parsed, "valid_json": True}
     except json.JSONDecodeError:
@@ -121,10 +121,10 @@ def run_all_experiments():
                     "consistency": None
                 }
             })
-            time.sleep(1)
+            time.sleep(3)
     output_path = os.path.join("data", "results.json")
     with open(output_path, "w", encoding="utf-8") as f:
-        json.dump(articles, f, indent=2, ensure_ascii=False)
+        json.dump(results, f, indent=2, ensure_ascii=False)
 
     print(f"\nDone! {len(results)} results saved to {output_path}")
 
