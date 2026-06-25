@@ -25,10 +25,14 @@ Read the scored results that are printed and given an average score table per te
 ## Experiment
 ### Technique -> Description
 
-Zero-shot -> Direct instructions with no examples
+Zero-shot -> Direct instructions with no examples 
+
 Role prompting -> Model given a persona before summarizing
+
 Few-shot -> Two examples are given for input/output pairs show before given the real article
+
 Chain-of-Thought -> Model lists key ideas first, showing its thought process, then writes the summary
+
 Output Formatting (JSON) -> Model retuns structured JSON with a headline, summary, and key terms related to each of the articles separately
 
 ## Results Summary
