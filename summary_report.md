@@ -4,16 +4,15 @@
 
 Accross given 10 Wikipedia articles compare 5 prompting techniques for text summarization. Scoring each technique on accuracy, conciseness, and consistency (1-5 scale).
 
-── Results Summary ─────────────────────────────────────────────────
-Technique              Accuracy  Conciseness  Consistency    Overall
-────────────────────────────────────────────────────────────────────
-json_output                 4.8          5.0          4.0        4.6
-role_prompting              5.0          4.5          4.0        4.5
-few_shot                    5.0          4.3          4.0       4.43
-chain_of_thought            5.0          3.3          5.0       4.43
-zero_shot                   5.0          3.9          3.0       3.97
-────────────────────────────────────────────────────────────────────
-Optimal performing technique: json_output (overall average: 4.6)
+| Technique | Accuracy | Conciseness | Consistency | Overall |
+| :--- | :---: | :---: | :---: | :---: |
+| **json_output** | 4.8 | 5.0 | 4.0 | **4.60** |
+| **role_prompting** | 5.0 | 4.5 | 4.0 | 4.50 |
+| **few_shot** | 5.0 | 4.3 | 4.0 | 4.43 |
+| **chain_of_thought** | 5.0 | 3.3 | 5.0 | 4.43 |
+| **zero_shot** | 5.0 | 3.9 | 3.0 | 3.97 |
+
+**Optimal performing technique:** `json_output` (overall average: 4.6)
 
 ## Which Technique Scored Best and Why
 
