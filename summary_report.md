@@ -17,7 +17,7 @@ Optimal performing technique: json_output (overall average: 4.6)
 
 ## Which Technique Scored Best and Why
 
-JSON output scored the highest overall, with a score of 4.6 because the asrtuctured format makes the model to be disciplined. Because of that, it cannot stray away from the given format, when it has to fit its reponse into specific JSON fields. This strict constraint logically produced the most concise reponses of all the 5 technique, with a score of 5.0. While maintaing high accuracy across all of the 10 articles.
+JSON output scored the highest overall, with a score of 4.6 because the srtuctured format makes the model be disciplined. Moreover, it cannot stray away from the given format, when it has to fit its reponse into specific JSON fields. This strict constraint logically produced the most concise reponses of all the 5 technique, with a score of 5.0. While maintaing high accuracy across all of the 10 articles.
 
 ## A Surprising Finding
 
@@ -28,7 +28,7 @@ Chain-of-Thought (CoT) was the most consistent technique by far with a score of 
 
 System prompt:
 "You are an exact assistant who always responds with valid JSON files."
-"Never include anything that would make your response an invalid for JSON."
+"Never include anything that would make your response invalid for JSON."
 
 ### Using the mesage template:
 
@@ -38,4 +38,4 @@ Summarize the following article and return ONLY a JSON object with exactly the f
 Article:
 {article_text}
 
-Reason: JSON output produced the best balance of accuracy and conciseness, and the structured format makes the output directly usable in any downstream application without further parsing or cleanup — a practical advantage in any real production system.
+Reason: JSON output produced the best balance of accuracy and conciseness, and the structured format makes the output directly usable in any downstream application without further parsing or cleanup, which is a practical advantage in any real production system.

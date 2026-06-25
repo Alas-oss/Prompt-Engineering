@@ -14,7 +14,7 @@ Accross given 10 Wikipedia articles compare 5 prompting techniques for text summ
 ## How to Run
 
 ### Step 1 - Fetch the articles: python src/fetch_articles.py
-This will download the  10 Wikipedia articles and save them to 'data/articles.json'.
+This will download the 10 Wikipedia articles and save them to 'data/articles.json'.
 
 ### Step 2 - Run the experiments: python src/prompt_experiments.py
 Run all 5 prompting techniques accross all 10 articles and save the results to 'data/results.json'.
