@@ -77,7 +77,7 @@ def chain_of_thought(article_text):
 # E - Output Formatting (JSON)
 def json_output(article_text):
     system = ("You are an exact assistant who always responds with valid JSON files."
-              "Never include anything that would make your response an invalid for JSON.")
+              "Never include anything that would make your rseponse an invalid for JSON.")
     user = (
         f"Summarize the following article and return ONLY a JSON object with exactly the fields listed:\n"
         f'{{"headline": "one sentence title", "summary": "2-3 sentence summary", "key_terms": ["term1", "term2", "term3"]}}\n\n'

@@ -6,7 +6,7 @@ Accross given 10 Wikipedia articles compare 5 prompting techniques for text summ
 
 1. Clone this repo
 2. Create a virtual environment: 'python -m venv venv'
-3. Activate it: '.\venv\Scripts\activate' (for Windows) or 'source venv/bin/activate' (for Max/Linux)
+3. Activate it: '.\venv\Scripts\activate' (for Windows) or 'source venv/bin/activate' (for Mac/Linux)
 4. Install the necessary dependencies: 'pip install -r requirements.txt'
 5. Create a '.env' file in the root folder with your Groq API key
     GROQ_API_KEY=replace_with_your_key
