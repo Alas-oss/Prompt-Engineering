@@ -16,7 +16,7 @@ Accross given 10 Wikipedia articles compare 5 prompting techniques for text summ
 
 ## Which Technique Scored Best and Why
 
-JSON output scored the highest overall, with a score of 4.6 because the srtuctured format makes the model be disciplined. Moreover, it cannot stray away from the given format, when it has to fit its reponse into specific JSON fields. This strict constraint logically produced the most concise reponses of all the 5 technique, with a score of 5.0. While maintaing high accuracy across all of the 10 articles.
+JSON output scored the highest overall, with a score of 4.6 because the srtuctured format makes the model be disciplined. Moreover, it cannot stray away from the given format, when it has to fit its reponse into specific JSON fields. This strict constraint logically produced the most concise reponses of all 5 technique, with a score of 5.0. While maintaing high accuracy across all of the 10 articles.
 
 ## A Surprising Finding
 
