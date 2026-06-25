@@ -34,10 +34,8 @@ def compute_averages(results):
             "conciseness": round(sum(con) / len(con), 2) if con else None,
             "consistency": round(sum(cst) / len(cst), 2) if cst else None,
             "overall":     round(
-                (sum(acc + con + cst)) / (len(acc + con + cst)), 2
-            ) if acc else None
+                (sum(acc + con + cst)) / (len(acc + con + cst)), 2) if acc else None
         }
-
     return averages
 
 def print_table(averages):
